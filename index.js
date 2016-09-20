@@ -37,7 +37,7 @@ module.exports = function (fileArray, opts) {
                 return String(fs.readFileSync(modFile, 'utf8'));
             });
 
-            file.contents = new Buffer(contents.join('') + file.contents.toString());
+            file.contents = new Buffer(contents.join('') + file.contents.toString('utf8'));
             this.push(file);
         } catch (err) {
             this.emit('error', new PluginError('gulp-together', err));

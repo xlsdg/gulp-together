@@ -2,7 +2,7 @@
   "name": "gulp-together",
   "title": "gulp-together",
   "description": "Streaming concat package for gulp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": "xlsdg/gulp-together",
   "author": {
