@@ -25,14 +25,14 @@
   ],
   "homepage": "https://github.com/xlsdg/gulp-together",
   "bugs": {
-      "url": "https://github.com/xlsdg/gulp-together"
+    "url": "https://github.com/xlsdg/gulp-together/issues"
   },
   "dependencies": {
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
-    "xo": "^0.14.0"
+    "ava": "^0.16.0",
+    "xo": "^0.16.0"
   }
 }
