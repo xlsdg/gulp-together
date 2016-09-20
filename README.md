@@ -1,6 +1,6 @@
-# gulp-together [![Build Status](https://travis-ci.org/xlsdg/gulp-together.svg?branch=master)](https://travis-ci.org/xlsdg/gulp-together)
+# gulp-together
 
-> My majestic gulp plugin
+> Streaming concat package for gulp
 
 
 ## Install
@@ -18,24 +18,19 @@ const together = require('gulp-together');
 
 gulp.task('default', () => {
 	gulp.src('src/file.ext')
-		.pipe(together())
-		.pipe(gulp.dest('dist'))
+		.pipe(together(['package-name']))
+		.pipe(gulp.dest('dist'));
 );
 ```
 
 
 ## API
 
-### together([options])
+### together(fileArray)
 
-#### options
+#### fileArray
 
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
+Type: `array`<br>
 
 
 ## License
