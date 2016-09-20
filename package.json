@@ -1,0 +1,32 @@
+{
+  "name": "gulp-together",
+  "version": "0.0.0",
+  "description": "My majestic gulp plugin",
+  "license": "MIT",
+  "repository": "xlsdg/gulp-together",
+  "author": {
+    "name": "xLsDg",
+    "email": "xlsdg@qq.com",
+    "url": "github.com/xlsdg/gulp-together"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.14.0"
+  }
+}
