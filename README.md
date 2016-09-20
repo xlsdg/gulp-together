@@ -33,6 +33,10 @@ gulp.task('default', () => {
 Type: `array`<br>
 
 
+## Example
+
+https://github.com/xlsdg/flowerpassword.js/blob/master/gulpFile.js
+
 ## License
 
 MIT © [xLsDg](https://github.com/xlsdg/gulp-together)
