@@ -1,7 +1,8 @@
 {
   "name": "gulp-together",
-  "version": "0.0.0",
-  "description": "My majestic gulp plugin",
+  "title": "gulp-together",
+  "description": "Streaming concat package for gulp",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": "xlsdg/gulp-together",
   "author": {
@@ -15,12 +16,17 @@
   "scripts": {
     "test": "xo && ava"
   },
+  "main": "index.js",
   "files": [
     "index.js"
   ],
   "keywords": [
     "gulpplugin"
   ],
+  "homepage": "https://github.com/xlsdg/gulp-together",
+  "bugs": {
+      "url": "https://github.com/xlsdg/gulp-together"
+  },
   "dependencies": {
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1"
