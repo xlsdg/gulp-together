@@ -31,13 +31,11 @@ module.exports = function (fileArray, opts) {
 
         try {
             var cwd = process.cwd();
-            var contents = [];
-
-            for (var i = 0, len = fileArray.length, modPath, modFile; i < len; i++) {
-                modPath = cwd + '/node_modules/' + fileArray[i];
-                modFile = modPath + '/' + require(modPath + '/package.json').main;
-                contents.push(String(fs.readFileSync(modFile, 'utf8')));
-            }
+            var contents = fileArray.map(function(file) {
+                var modPath = cwd + '/node_modules/' + file;
+                var modFile = modPath + '/' + require(modPath + '/package.json').main;
+                return String(fs.readFileSync(modFile, 'utf8'));
+            });
 
             file.contents = new Buffer(contents.join('') + file.contents.toString());
             this.push(file);
